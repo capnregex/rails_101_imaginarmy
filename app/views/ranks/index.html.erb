@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th>Name</th>
+      <th>Color</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,6 +15,7 @@
     <% @ranks.each do |rank| %>
       <tr>
         <td><%= rank.name %></td>
+        <td><%= rank.color %></td>
         <td><%= link_to 'Show', rank %></td>
         <td><%= link_to 'Edit', edit_rank_path(rank) %></td>
         <td><%= link_to 'Destroy', rank, method: :delete, data: { confirm: 'Are you sure?' } %></td>
